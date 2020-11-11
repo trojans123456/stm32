@@ -54,3 +54,9 @@ void printk(const char *fmt,...)
 
     console_puts(printbuffer);
 }
+
+/* get tick */
+DEF_WEAK uint32_t get_tick(void)
+{
+    return 0;
+}

@@ -4,6 +4,33 @@
 #include "stm32f4xx_rcc.h"
 #include "stm32f4xx_usart.h"
 
+#include "usart.h"
+
+#include "usart.h"
+
+void alientek_systick_init(void)
+{
+    uint32_t reload = 0;
+    SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);
+
+    reload = 168 / 8; /* 9MHZ = 9000000 = 1s */
+    reload *= 1000 * 5; /* 5ms */
+
+    SysTick->LOAD = (reload * 1) - 1;
+
+    /* enable */
+    SysTick->CTRL |= (1UL << 1);
+    SysTick->CTRL |= (1UL << 0);
+}
+
+uint32_t Tick;
+void SysTick_Handler(void)
+{
+    Tick++;
+
+    usart_checkover();
+}
+
 void alientek_usart1_init(void)
 {
     USART_InitTypeDef USART_InitStruct;
@@ -38,16 +65,19 @@ void alientek_usart1_init(void)
 
 void alientek_putc(char ch)
 {
+	
     while(USART_GetFlagStatus(USART1,USART_FLAG_TXE) == RESET) ;
     USART_SendData(USART1,ch);
     while(USART_GetFlagStatus(USART1,USART_FLAG_TC) == RESET) ;
+	 
 }
 
 
 void alientek_console_init(void)
 {
-    alientek_usart1_init();
-    console_init(alientek_putc);
+    alientek_systick_init();
+    //alientek_usart1_init();
+   // console_init(alientek_putc);
 }
 
 stm32_board_init(alientek_console_init);

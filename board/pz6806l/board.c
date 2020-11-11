@@ -1,7 +1,43 @@
 #include "device.h"
+
 #include "stm32f10x_gpio.h"
 #include "stm32f10x_usart.h"
 #include "stm32f10x_rcc.h"
+
+#include "misc.h"
+
+#include "FreeRTOS.h"
+#include "task.h"
+
+void pz6806l_systick_init(void)
+{
+    uint32_t reload = 0;
+    SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);
+
+    reload = 72 / 8; /* 9MHZ = 9000000 = 1s */
+    reload *= 1000 * 5; /* 5ms */
+
+    SysTick->LOAD = (reload * 1) - 1;
+
+    /* enable */
+    SysTick->CTRL |= (1UL << 1);
+    SysTick->CTRL |= (1UL << 0);
+}
+
+uint32_t Tick;
+void SysTick_Handler(void)
+{
+    Tick++;
+    if(xTaskGetSchedulerState() != taskSCHEDULER_NOT_STARTED)
+    {
+        xPortSysTickHandler();
+    }
+}
+
+uint32_t get_tick(void)
+{
+    return Tick;
+}
 
 void pz6806l_usart3_init(void)
 {

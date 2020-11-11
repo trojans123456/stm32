@@ -1,0 +1,309 @@
+Dependencies for Project 'alientek', Target 'alientek': (DO NOT MODIFY !)
+F (..\arch\M4\stm32f4xx_it.c)(0x5FABBCB5)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\arch\M4 -I..\board\alientek -I..\common -I..\Libraries\stm32f4\inc-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -o ..\output\stm32f4xx_it.o --omf_browse ..\output\stm32f4xx_it.crf --depend ..\output\stm32f4xx_it.d)
+I (..\arch\M4\stm32f4xx_it.h)(0x5FAB92E5)
+I (..\arch\M4\stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4.h)(0x5FAB92E5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\arch\M4\core_cmInstr.h)(0x5FAB92E5)
+I (..\arch\M4\core_cmFunc.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4_simd.h)(0x5FAB92E5)
+I (..\arch\M4\system_stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\stm32f4xx_conf.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_adc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_crc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dbgmcu.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dma.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_exti.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_flash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_gpio.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_i2c.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_iwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_pwr.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rcc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rtc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_sdio.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_spi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_syscfg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_tim.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_usart.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_wwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\misc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_cryp.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_hash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rng.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_can.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dac.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dcmi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_fsmc.h)(0x5FAB92E5)
+F (..\arch\M4\system_stm32f4xx.c)(0x5FAB92E5)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\arch\M4 -I..\board\alientek -I..\common -I..\Libraries\stm32f4\inc-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -o ..\output\system_stm32f4xx.o --omf_browse ..\output\system_stm32f4xx.crf --depend ..\output\system_stm32f4xx.d)
+I (..\arch\M4\stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4.h)(0x5FAB92E5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\arch\M4\core_cmInstr.h)(0x5FAB92E5)
+I (..\arch\M4\core_cmFunc.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4_simd.h)(0x5FAB92E5)
+I (..\arch\M4\system_stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\stm32f4xx_conf.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_adc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_crc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dbgmcu.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dma.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_exti.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_flash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_gpio.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_i2c.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_iwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_pwr.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rcc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rtc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_sdio.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_spi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_syscfg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_tim.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_usart.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_wwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\misc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_cryp.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_hash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rng.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_can.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dac.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dcmi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_fsmc.h)(0x5FAB92E5)
+F (..\arch\M4\startup_stm32f40_41xxx.s)(0x5FAB92E5)(--cpu Cortex-M4.fp -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include--list .\startup_stm32f40_41xxx.lst --xref -o ..\output\startup_stm32f40_41xxx.o --depend ..\output\startup_stm32f40_41xxx.d)
+F (..\board\alientek\board.c)(0x5FABBD86)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\arch\M4 -I..\board\alientek -I..\common -I..\Libraries\stm32f4\inc-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -o ..\output\board.o --omf_browse ..\output\board.crf --depend ..\output\board.d)
+I (..\common\device.h)(0x5FAB9529)
+I (..\common\define.h)(0x5FABBBF1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\Libraries\stm32f4\inc\stm32f4xx_gpio.h)(0x5FAB92E5)
+I (..\arch\M4\stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4.h)(0x5FAB92E5)
+I (..\arch\M4\core_cmInstr.h)(0x5FAB92E5)
+I (..\arch\M4\core_cmFunc.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4_simd.h)(0x5FAB92E5)
+I (..\arch\M4\system_stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\stm32f4xx_conf.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_adc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_crc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dbgmcu.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dma.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_exti.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_flash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_i2c.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_iwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_pwr.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rcc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rtc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_sdio.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_spi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_syscfg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_tim.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_usart.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_wwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\misc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_cryp.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_hash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rng.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_can.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dac.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dcmi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_fsmc.h)(0x5FAB92E5)
+I (..\board\alientek\usart.h)(0x5FABB547)
+I (..\common\fifo.h)(0x5FABB650)
+F (..\board\alientek\usart.c)(0x5FABBA76)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\arch\M4 -I..\board\alientek -I..\common -I..\Libraries\stm32f4\inc-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -o ..\output\usart.o --omf_browse ..\output\usart.crf --depend ..\output\usart.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x52FDD27E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x52FDD27E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x52FDD27E)
+I (..\Libraries\stm32f4\inc\stm32f4xx_usart.h)(0x5FAB92E5)
+I (..\arch\M4\stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4.h)(0x5FAB92E5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\arch\M4\core_cmInstr.h)(0x5FAB92E5)
+I (..\arch\M4\core_cmFunc.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4_simd.h)(0x5FAB92E5)
+I (..\arch\M4\system_stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\stm32f4xx_conf.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_adc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_crc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dbgmcu.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dma.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_exti.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_flash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_gpio.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_i2c.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_iwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_pwr.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rcc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rtc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_sdio.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_spi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_syscfg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_tim.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_wwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\misc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_cryp.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_hash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rng.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_can.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dac.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dcmi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_fsmc.h)(0x5FAB92E5)
+I (..\common\device.h)(0x5FAB9529)
+I (..\common\define.h)(0x5FABBBF1)
+I (..\board\alientek\usart.h)(0x5FABB547)
+I (..\common\fifo.h)(0x5FABB650)
+F (..\Libraries\stm32f4\src\misc.c)(0x5FAB92E5)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\arch\M4 -I..\board\alientek -I..\common -I..\Libraries\stm32f4\inc-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -o ..\output\misc.o --omf_browse ..\output\misc.crf --depend ..\output\misc.d)
+I (..\Libraries\stm32f4\inc\misc.h)(0x5FAB92E5)
+I (..\arch\M4\stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4.h)(0x5FAB92E5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\arch\M4\core_cmInstr.h)(0x5FAB92E5)
+I (..\arch\M4\core_cmFunc.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4_simd.h)(0x5FAB92E5)
+I (..\arch\M4\system_stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\stm32f4xx_conf.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_adc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_crc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dbgmcu.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dma.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_exti.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_flash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_gpio.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_i2c.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_iwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_pwr.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rcc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rtc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_sdio.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_spi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_syscfg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_tim.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_usart.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_wwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_cryp.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_hash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rng.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_can.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dac.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dcmi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_fsmc.h)(0x5FAB92E5)
+F (..\Libraries\stm32f4\src\stm32f4xx_gpio.c)(0x5FAB92E5)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\arch\M4 -I..\board\alientek -I..\common -I..\Libraries\stm32f4\inc-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -o ..\output\stm32f4xx_gpio.o --omf_browse ..\output\stm32f4xx_gpio.crf --depend ..\output\stm32f4xx_gpio.d)
+I (..\Libraries\stm32f4\inc\stm32f4xx_gpio.h)(0x5FAB92E5)
+I (..\arch\M4\stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4.h)(0x5FAB92E5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\arch\M4\core_cmInstr.h)(0x5FAB92E5)
+I (..\arch\M4\core_cmFunc.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4_simd.h)(0x5FAB92E5)
+I (..\arch\M4\system_stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\stm32f4xx_conf.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_adc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_crc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dbgmcu.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dma.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_exti.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_flash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_i2c.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_iwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_pwr.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rcc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rtc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_sdio.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_spi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_syscfg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_tim.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_usart.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_wwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\misc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_cryp.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_hash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rng.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_can.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dac.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dcmi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_fsmc.h)(0x5FAB92E5)
+F (..\Libraries\stm32f4\src\stm32f4xx_rcc.c)(0x5FAB92E5)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\arch\M4 -I..\board\alientek -I..\common -I..\Libraries\stm32f4\inc-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -o ..\output\stm32f4xx_rcc.o --omf_browse ..\output\stm32f4xx_rcc.crf --depend ..\output\stm32f4xx_rcc.d)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rcc.h)(0x5FAB92E5)
+I (..\arch\M4\stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4.h)(0x5FAB92E5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\arch\M4\core_cmInstr.h)(0x5FAB92E5)
+I (..\arch\M4\core_cmFunc.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4_simd.h)(0x5FAB92E5)
+I (..\arch\M4\system_stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\stm32f4xx_conf.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_adc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_crc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dbgmcu.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dma.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_exti.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_flash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_gpio.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_i2c.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_iwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_pwr.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rtc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_sdio.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_spi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_syscfg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_tim.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_usart.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_wwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\misc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_cryp.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_hash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rng.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_can.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dac.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dcmi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_fsmc.h)(0x5FAB92E5)
+F (..\Libraries\stm32f4\src\stm32f4xx_usart.c)(0x5FAB92E5)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\arch\M4 -I..\board\alientek -I..\common -I..\Libraries\stm32f4\inc-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -o ..\output\stm32f4xx_usart.o --omf_browse ..\output\stm32f4xx_usart.crf --depend ..\output\stm32f4xx_usart.d)
+I (..\Libraries\stm32f4\inc\stm32f4xx_usart.h)(0x5FAB92E5)
+I (..\arch\M4\stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4.h)(0x5FAB92E5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\arch\M4\core_cmInstr.h)(0x5FAB92E5)
+I (..\arch\M4\core_cmFunc.h)(0x5FAB92E5)
+I (..\arch\M4\core_cm4_simd.h)(0x5FAB92E5)
+I (..\arch\M4\system_stm32f4xx.h)(0x5FAB92E5)
+I (..\arch\M4\stm32f4xx_conf.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_adc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_crc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dbgmcu.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dma.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_exti.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_flash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_gpio.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_i2c.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_iwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_pwr.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rcc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rtc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_sdio.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_spi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_syscfg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_tim.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_wwdg.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\misc.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_cryp.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_hash.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_rng.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_can.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dac.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_dcmi.h)(0x5FAB92E5)
+I (..\Libraries\stm32f4\inc\stm32f4xx_fsmc.h)(0x5FAB92E5)
+F (..\common\device.c)(0x5FAB9561)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\arch\M4 -I..\board\alientek -I..\common -I..\Libraries\stm32f4\inc-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -o ..\output\device.o --omf_browse ..\output\device.crf --depend ..\output\device.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x52FDD27E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x52FDD27E)
+I (..\common\device.h)(0x5FAB9529)
+I (..\common\define.h)(0x5FABBBF1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+F (..\common\fifo.c)(0x5FABBBDC)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\arch\M4 -I..\board\alientek -I..\common -I..\Libraries\stm32f4\inc-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -o ..\output\fifo.o --omf_browse ..\output\fifo.crf --depend ..\output\fifo.d)
+I (..\common\fifo.h)(0x5FABB650)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+F (..\app\main.c)(0x5FABBAC7)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\arch\M4 -I..\board\alientek -I..\common -I..\Libraries\stm32f4\inc-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
+I (..\common\device.h)(0x5FAB9529)
+I (..\common\define.h)(0x5FABBBF1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\board\alientek\usart.h)(0x5FABB547)
+I (..\common\fifo.h)(0x5FABB650)
