@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="alientek" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/alientek" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/alientek" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../Libraries/stm32f4/inc/misc.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_adc.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_can.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_crc.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_cryp.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_dac.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_dbgmcu.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_dcmi.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_dma.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_dma2d.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_exti.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_flash.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_flash_ramfunc.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_fmc.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_fsmc.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_gpio.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_hash.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_i2c.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_iwdg.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_ltdc.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_pwr.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_rcc.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_rng.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_rtc.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_sai.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_sdio.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_spi.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_syscfg.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_tim.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_usart.h" />
+		<Unit filename="../Libraries/stm32f4/inc/stm32f4xx_wwdg.h" />
+		<Unit filename="../Libraries/stm32f4/src/misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_adc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_can.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_crc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_cryp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_cryp_aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_cryp_des.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_cryp_tdes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_dac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_dbgmcu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_dcmi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_dma.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_dma2d.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_exti.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_flash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_flash_ramfunc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_fmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_fsmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_hash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_hash_md5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_hash_sha1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_iwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_ltdc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_pwr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_rcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_rng.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_sai.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_sdio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_syscfg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_tim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_usart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f4/src/stm32f4xx_wwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../app/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arch/M4/core_cm4.h" />
+		<Unit filename="../arch/M4/core_cm4_simd.h" />
+		<Unit filename="../arch/M4/core_cmFunc.h" />
+		<Unit filename="../arch/M4/core_cmInstr.h" />
+		<Unit filename="../arch/M4/startup_stm32f40_41xxx.s" />
+		<Unit filename="../arch/M4/stm32f4xx.h" />
+		<Unit filename="../arch/M4/stm32f4xx_conf.h" />
+		<Unit filename="../arch/M4/stm32f4xx_it.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arch/M4/stm32f4xx_it.h" />
+		<Unit filename="../arch/M4/system_stm32f4xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arch/M4/system_stm32f4xx.h" />
+		<Unit filename="../board/alientek/console.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/define.h" />
+		<Unit filename="../common/device.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/device.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

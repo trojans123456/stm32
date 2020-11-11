@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-#include "define.h"
 #include "device.h"
 
 static

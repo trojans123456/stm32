@@ -1,6 +1,8 @@
 #ifndef __DEVICE_H
 #define __DEVICE_H
 
+#include "define.h"
+
 void device_init(void);
 
 /* console output */
