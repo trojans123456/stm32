@@ -6,8 +6,7 @@
 
 #include "misc.h"
 
-#include "FreeRTOS.h"
-#include "task.h"
+
 
 void pz6806l_systick_init(void)
 {
@@ -28,10 +27,7 @@ uint32_t Tick;
 void SysTick_Handler(void)
 {
     Tick++;
-    if(xTaskGetSchedulerState() != taskSCHEDULER_NOT_STARTED)
-    {
-        xPortSysTickHandler();
-    }
+
 }
 
 uint32_t get_tick(void)

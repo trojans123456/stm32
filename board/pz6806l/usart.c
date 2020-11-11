@@ -9,7 +9,6 @@
 #include "device.h"
 #include "usart.h"
 
-
 //for 485
 #define UART_TX     Bit_SET
 #define UART_RX     Bit_RESET
@@ -76,8 +75,6 @@ static serial_ops_t uart_ops =
 static unsigned char UartCom3Txbuf[COM3_TX_LEN];
 static unsigned char UartCom3Rxbuf[COM3_RX_LEN];
 
-static queue_t UartCom3TxList;
-static queue_t UartCom3RxList;
 
 serial_t UartCom3 =
 {
@@ -91,8 +88,7 @@ serial_t UartCom3 =
     },
     {0},
     0,0,
-    &UartCom3TxList,
-    &UartCom3RxList,
+        {0},{0},
     NULL,
     &uart_ops
 };
@@ -110,6 +106,9 @@ void USART3_configuration(serial_params_t *param)
 
     /* enable gpio clock */
     RCC_APB2PeriphClockCmd(UART_COM3_TX_GPIO_CLK | UART_COM3_RX_GPIO_CLK,ENABLE);
+
+
+
 
     GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AF_PP;//????
     GPIO_InitStruct.GPIO_Pin = UART_COM3_TX_PIN;
@@ -136,8 +135,8 @@ void USART3_configuration(serial_params_t *param)
     USART_Cmd(UART_COM3_UART,ENABLE);
 
     USART_ITConfig(UART_COM3_UART,USART_IT_RXNE,ENABLE);
-   // USART_ITConfig(UART_COM3_UART,USART_IT_TC,ENABLE);
-   // USART_ClearFlag(UART_COM3_UART,USART_FLAG_TC);
+    USART_ITConfig(UART_COM3_UART,USART_IT_TC,ENABLE);
+    USART_ClearFlag(UART_COM3_UART,USART_FLAG_TC);
 }
 
 /*********** public *****************/
@@ -149,15 +148,15 @@ void UartCom_Initialize(struct serial_ *baseCfg)
     switch(No)
     {
     case UART_COM3:
-    {
-        curUsart->USARTx = UART_COM3_UART;
-        curUsart->irq = UART_COM3_IRQn;
+        {
+            curUsart->USARTx = UART_COM3_UART;
+            curUsart->irq = UART_COM3_IRQn;
 
-        usart_queue_init(&UartCom3TxList,sizeof(unsigned char),UartCom3Rxbuf,COM3_TX_LEN);
-        usart_queue_init(&UartCom3RxList,sizeof(unsigned char),UartCom3Txbuf,COM3_RX_LEN);
+            fifo_init(&UartCom3.TxList,UartCom3Rxbuf,COM3_TX_LEN);
+            fifo_init(&UartCom3.RxList,UartCom3Txbuf,COM3_RX_LEN);
 
-        USART3_configuration(&baseCfg->param);
-    }
+            USART3_configuration(&baseCfg->param);
+        }
         break;
     default:
         break;
@@ -173,7 +172,7 @@ void UartCom_IRQ(struct serial_ *serial)
         USART_ClearITPendingBit(curUsart->USARTx,USART_IT_RXNE);
 
         dat = (unsigned char)USART_ReceiveData(curUsart->USARTx);
-        serial->RxList->queue_push(serial->RxList,&dat);
+        fifo_push(&serial->RxList,dat);
         serial->RxOverTime = UART_RXOVER_TIME;
     }
 
@@ -181,8 +180,9 @@ void UartCom_IRQ(struct serial_ *serial)
     {
         USART_ClearITPendingBit(curUsart->USARTx,USART_IT_TC);
 
-        if(queue_true == serial->TxList->queue_pop(serial->TxList,&dat,0))
+        if(fifo_isempty(&serial->TxList) != True)
         {
+            fifo_pop(&serial->TxList,&dat);
             USART_SendData(curUsart->USARTx,dat);
             serial->TxErrTime = UART_TXERR_TIME;
         }
@@ -201,17 +201,17 @@ unsigned int UartCom_GetMsg(struct serial_ *serial, void *pRecvBuf, unsigned int
 
     if(NULL == pRecvBuf)
         return 0;
-    while((serial->RxList->queue_is_empty(serial->RxList) != queue_true)&&(len--)&&(serial->RxOverTime==0))
+    while((fifo_isempty(&serial->RxList) != True)&&(len--)&&(serial->RxOverTime==0))
     {
-        serial->RxList->queue_pop(serial->RxList,(((unsigned char *)pRecvBuf)+n),0);
+        fifo_pop(&serial->RxList,(((unsigned char *)pRecvBuf)+n));
         n++;
     }
     return n;
 }
 void UartCom_SendMsg(struct serial_ *serial, void *pSendBuf, unsigned int len)
 {
-    unsigned char *ptr = (unsigned char *)pSendBuf;
-    unsigned char dat;
+    unsigned char *ptr = (unsigned char *)pSendBuf + 1;
+    unsigned char dat = *(uint8_t*)pSendBuf;
     struct UartCom *curUsart = &systemUsart[serial->param.No % UART_COMNUM];
 
     if(NULL == pSendBuf || len == 0)
@@ -222,19 +222,30 @@ void UartCom_SendMsg(struct serial_ *serial, void *pSendBuf, unsigned int len)
         serial->flg.b0 = 0;
 
     }
-    while(len--)
-    {
-        serial->TxList->queue_push(serial->TxList,ptr++);
-    }
 
-    if(0==serial->flg.b0)
+    if(len == 1 && (0==serial->flg.b0))
     {
         serial->ops->rt_ctrl(serial,UART_TX);
         serial->flg.b0 = 1;
         serial->flg.b1 = 0;
         serial->TxErrTime = UART_TXERR_TIME;
-        serial->TxList->queue_pop(serial->TxList,&dat,0);
         USART_SendData(curUsart->USARTx, dat);
+
+        return ;
+    }
+    len --;
+    while(len--)
+    {
+        fifo_push(&serial->TxList,*ptr++);
+    }
+
+    if(0==serial->flg.b0)
+    {
+            serial->ops->rt_ctrl(serial,UART_TX);
+            serial->flg.b0 = 1;
+            serial->flg.b1 = 0;
+            serial->TxErrTime = UART_TXERR_TIME;
+            USART_SendData(curUsart->USARTx, dat);
     }
 }
 void UartCom_RtCtrl(struct serial_ *serial,u8 rtStatus)
@@ -296,7 +307,7 @@ static void NVIC_Configuration(struct serial_ *uart,unsigned char sub_pri)
 
 void usart_checkover(void)
 {
-    /* com3 */
+    /* com1 */
     UartCom3.ops->checkover(&UartCom3);
 }
 
@@ -319,15 +330,13 @@ serial_t *usart_find(unsigned int port)
 }
 
 
-int stm32f1_usart_init(void)
+void stm32f1_usart_init(void)
 {
     /* com3 */
     UartCom3.ops->init(&UartCom3);
     NVIC_Configuration(&UartCom3,1);
 
-    return 0;
+
 }
 
 stm32_board_init(stm32f1_usart_init);
-
-

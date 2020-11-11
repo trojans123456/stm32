@@ -1,11 +1,11 @@
 #ifndef __USART_H
 #define __USART_H
 
-#include "usart_fifo.h"
+#include "fifo.h"
 
 typedef enum
 {
-    //UART_COM1,
+    //UART_COM1 = 0,
     //UART_COM2,
     UART_COM3,
     //UART_COM4,
@@ -53,8 +53,8 @@ typedef struct serial_
     byte_field flg; //b0 txbusy b1 rxbusy
     unsigned char RxOverTime;//
     unsigned char TxErrTime;
-    queue_t     *TxList;
-    queue_t     *RxList;
+    fifo_t     TxList;
+    fifo_t     RxList;
 
     void *private_user;
     serial_ops_t *ops;

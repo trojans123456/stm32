@@ -15,7 +15,7 @@ int main()
 {
     device_init();
 		
-    serial_t *serial = usart_find(UART_COM1);
+    serial_t *serial = usart_find(UART_COM3);
     if(!serial)
         return 0;
 
@@ -24,7 +24,7 @@ int main()
     while(1)
     {
        // printk("xxx%d\n",cnt++);	
-        if(usart_read(serial,buf,sizeof(buf)) > 0)
+        //if(usart_read(serial,buf,sizeof(buf)) > 0)
             usart_write(serial,"xxx\n",9);
         delay_ms(2000);
     }

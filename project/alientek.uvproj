@@ -7,19 +7,19 @@
 
   <Targets>
     <Target>
-      <TargetName>alientek</TargetName>
+      <TargetName>pz6806l</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <TargetOption>
         <TargetCommonOption>
-          <Device>STM32F407ZG</Device>
+          <Device>STM32F103ZE</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <Cpu>IROM(0x08000000,0x100000) IRAM(0x20000000,0x20000) IRAM2(0x10000000,0x10000) CPUTYPE("Cortex-M4") FPU2 CLOCK(168000000) ELITTLE</Cpu>
+          <Cpu>IROM(0x08000000,0x80000) IRAM(0x20000000,0x10000) CPUTYPE("Cortex-M3") CLOCK(72000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
-          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F4xx_1024 -FS08000000 -FL0100000 -FP0($$Device:STM32F407ZG$Flash\STM32F4xx_1024.FLM))</FlashDriverDll>
-          <DeviceId>6105</DeviceId>
-          <RegisterFile>$$Device:STM32F407ZG$Device\Include\stm32f4xx.h</RegisterFile>
+          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F10x_512 -FS08000000 -FL080000 -FP0($$Device:STM32F103ZE$Flash\STM32F10x_512.FLM))</FlashDriverDll>
+          <DeviceId>4216</DeviceId>
+          <RegisterFile>$$Device:STM32F103ZE$Device\Include\stm32f10x.h</RegisterFile>
           <MemoryEnv></MemoryEnv>
           <Cmp></Cmp>
           <Asm></Asm>
@@ -29,7 +29,7 @@
           <SLE66CMisc></SLE66CMisc>
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
-          <SFDFile>$$Device:STM32F407ZG$SVD\STM32F40x.svd</SFDFile>
+          <SFDFile>$$Device:STM32F103ZE$SVD\STM32F103xx.svd</SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
@@ -102,13 +102,13 @@
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
-          <SimDllArguments> -REMAP -MPU</SimDllArguments>
+          <SimDllArguments> -REMAP</SimDllArguments>
           <SimDlgDll>DCM.DLL</SimDlgDll>
-          <SimDlgDllArguments>-pCM4</SimDlgDllArguments>
+          <SimDlgDllArguments>-pCM3</SimDlgDllArguments>
           <TargetDllName>SARMCM3.DLL</TargetDllName>
-          <TargetDllArguments> -MPU</TargetDllArguments>
+          <TargetDllArguments></TargetDllArguments>
           <TargetDlgDll>TCM.DLL</TargetDlgDll>
-          <TargetDlgDllArguments>-pCM4</TargetDlgDllArguments>
+          <TargetDlgDllArguments>-pCM3</TargetDlgDllArguments>
         </DllOption>
         <DebugOption>
           <OPTHX>
@@ -143,7 +143,7 @@
             <RestoreTracepoints>1</RestoreTracepoints>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>12</TargetSelection>
+          <TargetSelection>6</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -157,7 +157,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>BIN\CMSIS_AGDI.dll</Driver>
+            <Driver>Segger\JL2CM3.dll</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -207,7 +207,7 @@
             <AdsLsxf>1</AdsLsxf>
             <RvctClst>0</RvctClst>
             <GenPPlst>0</GenPPlst>
-            <AdsCpuType>"Cortex-M4"</AdsCpuType>
+            <AdsCpuType>"Cortex-M3"</AdsCpuType>
             <RvctDeviceName></RvctDeviceName>
             <mOS>0</mOS>
             <uocRom>0</uocRom>
@@ -216,8 +216,8 @@
             <hadIRAM>1</hadIRAM>
             <hadXRAM>0</hadXRAM>
             <uocXRam>0</uocXRam>
-            <RvdsVP>2</RvdsVP>
-            <hadIRAM2>1</hadIRAM2>
+            <RvdsVP>0</RvdsVP>
+            <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
             <useUlib>0</useUlib>
@@ -276,12 +276,12 @@
               <IRAM>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x20000</Size>
+                <Size>0x10000</Size>
               </IRAM>
               <IROM>
                 <Type>1</Type>
                 <StartAddress>0x8000000</StartAddress>
-                <Size>0x100000</Size>
+                <Size>0x80000</Size>
               </IROM>
               <XRAM>
                 <Type>0</Type>
@@ -306,7 +306,7 @@
               <OCR_RVCT4>
                 <Type>1</Type>
                 <StartAddress>0x8000000</StartAddress>
-                <Size>0x100000</Size>
+                <Size>0x80000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
                 <Type>1</Type>
@@ -331,12 +331,12 @@
               <OCR_RVCT9>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x20000</Size>
+                <Size>0x10000</Size>
               </OCR_RVCT9>
               <OCR_RVCT10>
                 <Type>0</Type>
-                <StartAddress>0x10000000</StartAddress>
-                <Size>0x10000</Size>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
               </OCR_RVCT10>
             </OnChipMemories>
             <RvctStartVector></RvctStartVector>
@@ -359,9 +359,9 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
+              <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\arch\M4;..\board\alientek;..\common;..\Libraries\stm32f4\inc</IncludePath>
+              <IncludePath>..\arch\M3;..\board\pz6806l;..\common;..\Libraries\stm32f1\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -382,7 +382,7 @@
             </VariousControls>
           </Aads>
           <LDads>
-            <umfTarg>1</umfTarg>
+            <umfTarg>0</umfTarg>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
             <noStLib>0</noStLib>
@@ -405,19 +405,24 @@
           <GroupName>arch</GroupName>
           <Files>
             <File>
-              <FileName>stm32f4xx_it.c</FileName>
+              <FileName>core_cm3.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\arch\M4\stm32f4xx_it.c</FilePath>
+              <FilePath>..\arch\M3\core_cm3.c</FilePath>
             </File>
             <File>
-              <FileName>system_stm32f4xx.c</FileName>
+              <FileName>stm32f10x_it.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\arch\M4\system_stm32f4xx.c</FilePath>
+              <FilePath>..\arch\M3\stm32f10x_it.c</FilePath>
             </File>
             <File>
-              <FileName>startup_stm32f40_41xxx.s</FileName>
+              <FileName>system_stm32f10x.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\arch\M3\system_stm32f10x.c</FilePath>
+            </File>
+            <File>
+              <FileName>startup_stm32f10x_hd.s</FileName>
               <FileType>2</FileType>
-              <FilePath>..\arch\M4\startup_stm32f40_41xxx.s</FilePath>
+              <FilePath>..\arch\M3\startup_stm32f10x_hd.s</FilePath>
             </File>
           </Files>
         </Group>
@@ -427,37 +432,12 @@
             <File>
               <FileName>board.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\board\alientek\board.c</FilePath>
+              <FilePath>..\board\pz6806l\board.c</FilePath>
             </File>
             <File>
               <FileName>usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\board\alientek\usart.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Libraries</GroupName>
-          <Files>
-            <File>
-              <FileName>misc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Libraries\stm32f4\src\misc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_gpio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Libraries\stm32f4\src\stm32f4xx_gpio.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_rcc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Libraries\stm32f4\src\stm32f4xx_rcc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Libraries\stm32f4\src\stm32f4xx_usart.c</FilePath>
+              <FilePath>..\board\pz6806l\usart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -473,6 +453,31 @@
               <FileName>fifo.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\common\fifo.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Libraries</GroupName>
+          <Files>
+            <File>
+              <FileName>misc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\stm32f1\src\misc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\stm32f1\src\stm32f10x_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\stm32f1\src\stm32f10x_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\stm32f1\src\stm32f10x_usart.c</FilePath>
             </File>
           </Files>
         </Group>

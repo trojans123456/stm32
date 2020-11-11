@@ -295,7 +295,6 @@
 ../arch/M4/system_stm32f4xx.h
 ../board/alientek/board.c
 ../board/pz6806l/board.c
-../board/pz6806l/usart_fifo.h
 ../common/define.h
 ../common/device.c
 ../common/device.h
@@ -412,11 +411,9 @@
 ../Libraries/stm32f4/src/stm32f4xx_tim.c
 ../Libraries/stm32f4/src/stm32f4xx_usart.c
 ../Libraries/stm32f4/src/stm32f4xx_wwdg.c
-../board/pz6806l/usart_fifo.c
 ../board/pz6806l/board.c
 ../board/pz6806l/usart.c
 ../board/pz6806l/usart.h
-../board/pz6806l/usart_fifo.c
 ../board/pz6806l/usart_fifo.h
 ../board/alientek/board.c
 ../board/alientek/usart.c
