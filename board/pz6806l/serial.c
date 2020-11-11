@@ -1,6 +1,7 @@
 #include "default.h"
 #include "serial.h"
 
+#define SERIAL_PORT_3_USED
 
 /* stm32 uart */
 struct stm32_uart
@@ -14,7 +15,7 @@ struct stm32_uart
 struct stm32_uart uart3 =
 {
     USART3,
-    USART3_IRQHandler
+    USART3_IRQn
 };
 
 struct serial_device serial3;
@@ -32,9 +33,9 @@ static void USART_Configuration(void)
 #if defined(SERIAL_PORT_3_USED)
     /* action AFIO */
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB,ENABLE);
-    RCC_APB1PeriphClcokCmd(RCC_APB1Perip_USART3,ENABLE);
+    RCC_APB1PeriphClcokCmd(RCC_APB1Periph_USART3,ENABLE);
     /* rx */
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATION;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11;
 
     GPIO_Init(GPIOB,&GPIO_InitStructure);
@@ -105,16 +106,13 @@ int stm32_ioctl(struct serial_device *dev,int cmd,void *args)
 
     switch(cmd)
     {
-    case SERIAL_IOCTL_DISABLE_IRQ:
+    case SERIAL_IOCTL_DISABLE_RX_IRQ:
         NVIC_DisableIRQ(uart->irq);
         USART_ITConfig(uart->uart_device,USART_IT_RXNE,DISABLE);
-        USART_ITConfig(uart->uart_device,USART_IT_TC,DISABLE);
         break;
-    case SERIAL_IOCTL_ENABLE_IRQ:
+    case SERIAL_IOCTL_ENABLE_RX_IRQ:
         NVIC_EnableIRQ(uart->irq);
         USART_ITConfig(uart->uart_device,USART_IT_RXNE,ENABLE);
-        USART_ITConfig(uart->uart_device,USART_IT_TC,ENABLE);
-        USART_ClearFlag(uart->uart_device,USART_FLAG_TC);
         break;
     case SERIAL_IOCTL_ENABLE_RX_DMA:
         break;
@@ -126,16 +124,22 @@ int stm32_putc(struct serial_device *dev,int ch)
     struct stm32_uart *uart;
     uart = (struct stm32_uart *)dev->priv_data;
 
-    USART_SendData(ch);
-    while(USART_GetFlagsStatus(uart->uart_device) == RESET);
+    while(USART_GetFlagStatus(uart->uart_device,USART_FLAG_TXE) == RESET) ;
+    USART_SendData(uart->uart_device,ch);
+    while(USART_GetFlagStatus(uart->uart_device,USART_FLAG_TC) == RESET) ;
     return 0;
 }
 int stm32_getc(struct serial_device *dev)
 {
     struct stm32_uart *uart;
     uart = (struct stm32_uart *)dev->priv_data;
+    int ch = -1;
 
-
+    if(USART_GetFlagStatus(uart->uart_device,USART_FLAG_RXNE) == SET)
+    {
+        ch = USART_ReceiveData(uart->uart_device);
+    }
+    return ch;
 }
 
 int stm32_async_puts(struct serial_device *dev,const char *fmt,...)

@@ -78,6 +78,7 @@ struct serial_device
 
     int (*configure)(struct serial_device *dev,struct serial_config *cfg);
     int (*ioctl)(struct serial_device *dev,int cmd,void *args);
+    /* */
     int (*putc)(struct serial_device *dev,int ch);
     int (*getc)(struct serial_device *dev);
     /* 触发中断发送和接收 */

@@ -26,24 +26,24 @@ void device_init(void)
     }
 }
 
-static putc_ptr putc;
+static putc_ptr putc_;
 static void console_puts(const char *str)
 {
-    if(NULL == putc)
+    if(NULL == putc_)
         return ;
 
     while(*str)
     {
         if(*str == '\n')
-            putc('\r');
-        putc(*str);
+            putc_('\r');
+        putc_(*str);
         str++;
     }
 }
 
 void console_init(putc_ptr func)
 {
-    putc = func;
+    putc_ = func;
 }
 void printk(const char *fmt,...)
 {

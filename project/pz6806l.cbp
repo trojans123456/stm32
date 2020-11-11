@@ -31,6 +31,94 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="../Libraries/stm32f1/inc/misc.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_adc.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_bkp.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_can.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_crc.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_dac.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_dbgmcu.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_dma.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_exti.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_flash.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_fsmc.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_gpio.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_i2c.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_iwdg.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_pwr.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_rcc.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_rtc.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_sdio.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_spi.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_tim.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_usart.h" />
+		<Unit filename="../Libraries/stm32f1/inc/stm32f10x_wwdg.h" />
+		<Unit filename="../Libraries/stm32f1/src/misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_adc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_bkp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_can.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_crc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_dac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_dbgmcu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_dma.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_exti.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_flash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_fsmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_iwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_pwr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_rcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_sdio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_tim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_usart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Libraries/stm32f1/src/stm32f10x_wwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="../board/pz6806l/board_config.h" />
 		<Unit filename="../board/pz6806l/serial.c">
 			<Option compilerVar="CC" />
