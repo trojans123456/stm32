@@ -1,5 +1,12 @@
+#include "device.h"
 
 int main()
 {
-    return 0;
+    device_init();
+
+    int cnt = 0;
+    while(1)
+    {
+        printk("xxx%d\n",cnt++);
+    }
 }

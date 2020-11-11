@@ -1,18 +1,17 @@
 #include <stdio.h>
+#include <stdarg.h>
 
 #include "device.h"
 
-static
-
 static void stm32_board_start(void)
 {
-    return 0;
+    return ;
 }
 __INIT_EXPORT(stm32_board_start,"0.end");
 
 static void stm32_board_end(void)
 {
-    return 0;
+    return ;
 }
 __INIT_EXPORT(stm32_board_end,"1.end");
 
@@ -47,10 +46,10 @@ void console_init(putc_ptr func)
 void printk(const char *fmt,...)
 {
     va_list args;
-    uint32_t i;
+   
     char printbuffer[256];
     va_start(args,fmt);
-    i = vsprintf(printbuffer,fmt,args);
+    vsprintf(printbuffer,fmt,args);
     va_end(args);
 
     console_puts(printbuffer);

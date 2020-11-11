@@ -1,0 +1,10 @@
+../board/alientek
+../Libraries/stm32f1/inc
+../board/pz6806l
+../Libraries/stm32f1/src
+../Libraries/stm32f4/inc
+../app
+../common
+../arch/M4
+../Libraries/stm32f4/src
+../arch/M3
