@@ -188,14 +188,54 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../arch/M4/system_stm32f4xx.h" />
-		<Unit filename="../board/alientek/console.c">
+		<Unit filename="../board/alientek/board.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="../board/alientek/usart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../board/alientek/usart.h" />
 		<Unit filename="../common/define.h" />
 		<Unit filename="../common/device.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../common/device.h" />
+		<Unit filename="../freertos/croutine.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../freertos/event_groups.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../freertos/freertos_list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../freertos/freertos_queue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../freertos/portable/MemMang/heap_1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../freertos/portable/MemMang/heap_2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../freertos/portable/MemMang/heap_3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../freertos/portable/MemMang/heap_4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../freertos/portable/MemMang/heap_5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../freertos/portable/RVDS/ARM_CM3/port.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../freertos/tasks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../freertos/timers.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

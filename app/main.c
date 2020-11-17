@@ -15,7 +15,7 @@ int main()
 {
     device_init();
 		
-    serial_t *serial = usart_find(UART_COM3);
+    serial_t *serial = usart_find(UART_COM1);
     if(!serial)
         return 0;
 
